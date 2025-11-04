@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'Fonte Pokemon';
+  src: url(./fonts/Pokemon\ Solid.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  height: 100vh;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(./img/pokemon-background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin: 0;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.2);
+  /* Semi-transparent white background */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  /* Subtle shadow for depth */
+  backdrop-filter: blur(16px);
+  /* The key to the frosted glass effect */
+  -webkit-backdrop-filter: blur(10px);
+  /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  width: 350px;
+  height: 450px;
+  border-radius: 1rem;
+  margin: 0 1rem;
+}
+
+h1 {
+  font-family: 'Fonte Pokemon', Impact, sans-serif;
+  font-size: 3rem;
+  color: #f4b700;
+  -webkit-text-stroke-width: 1px;
+  /* Para o contorno (opcional, para imitar o logo) */
+  -webkit-text-stroke-color: #3C5AA6;
+  /* Cor azul icônica do contorno */
+  margin: 0;
+
+  /*text-shadow: 2px 2px 0 #3b4cca, -2px -2px 0 #3b4cca, 2px -2px 0 #3b4cca, -2px 2px 0 #3b4cca; Outra forma de contorno/sombra */
+}
+
+input {
+  padding: 8px;
+  width: 200px;
+  border: none;
+  border-bottom: 1px solid #3C5AA6;
+  background-color: transparent;
+  color: #3C5AA6;
+}
+
+input::placeholder {
+  color: #3C5AA6;
+}
+
+input:focus {
+  outline: none;
+  background-color: #3c5aa651;
+  border-bottom: 2px solid #3C5AA6;
+  transition: all ease-in-out;
+}
+
+button {
+  padding: 8px 12px;
+  margin-left: 8px;
+  background-color: #ffcb05;
+  color: #3C5AA6;
+  font-weight: 600;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #f4b700;
+  transition: .3s all ease-in-out;
+}
+
+#resultado {
+  margin-top: 20px;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 300px;
+  }
+
+  input {
+    width: 180px;
+  }
+}
